@@ -1408,4 +1408,8 @@
                  <b>Last update:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
 
     <string name="quick_settings_reset_message">Reset quick settings tiles?</string>
+
+    <!-- ViperFX -->
+    <string name="viper_settings_title">SoundFX</string>
+
 </resources>

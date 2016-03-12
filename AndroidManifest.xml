@@ -2777,7 +2777,7 @@
                 <category android:name="android.intent.category.SHORTCUT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.SecuritySettings" />
+                       android:value="com.android.settings.cyanogenmod.LockScreenSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/lockscreen_settings" />
         </activity>

@@ -1146,8 +1146,8 @@
     <!-- CM Legal -->
     <string name="cmlicense_title">CyanogenMod legal</string>
 
- <string name="weather_settings_title">Weather</string> 
      <!-- Lockscreen weather -->
+    <string name="lockscreen">Lockscreen</string>
      <string name="lockscreen_weather_title">Weather</string>
      <string name="lock_screen_weather_settings_title">Weather options</string>
      <string name="weather_show_weather_title">Show weather</string>

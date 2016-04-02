@@ -602,6 +602,12 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+
+    <string-array name="background_data_access_choices">
+        <item>Over mobile data &amp; WiFi</item>
+        <item>Only over WiFi</item>
+        <item>No access</item>
+
     </string-array>
 
 </resources>

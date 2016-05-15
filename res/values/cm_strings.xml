@@ -207,6 +207,19 @@
     <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
     <string name="wifi_setting_countrycode_error">There was a problem setting the region code.</string>
 
+    <string name="wifi_countrycode_us">United States</string>
+    <string name="wifi_countrycode_ca">Canada, Taiwan</string>
+    <string name="wifi_countrycode_de">Germany</string>
+    <string name="wifi_countrycode_gb">Europe</string>
+    <string name="wifi_countrycode_jp">Japan, Russia</string>
+    <string name="wifi_countrycode_au">Australia</string>
+    <string name="wifi_countrycode_cn">China</string>
+    <string name="wifi_countrycode_kr">Korea</string>
+    <string name="wifi_countrycode_tr">South Africa, Turkey</string>
+    <string name="wifi_countrycode_sg">Israel, Singapore</string>
+    <string name="wifi_countrycode_br">Brazil</string>
+    <string name="wifi_countrycode_in">India</string>
+
     <!-- Profiles -->
     <string name="profile_menu_delete_title">Delete</string>
     <string name="profile_action_none">Leave unchanged</string>
@@ -310,6 +323,7 @@
     <!-- Lights settings, LED notification -->
     <string name="led_notification_title">Light settings</string>
     <string name="led_notification_text">LED light enabled by settings</string>
+    <string name="notification_light_no_apps_summary">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
 
     <!-- Setting checkbox title for Whether to enable Android debugging support on the phone. -->
     <string name="enable_adb_cm">Android debugging</string>
@@ -587,6 +601,10 @@
     <string name="disable_navkeys_title">Enable on-screen nav bar</string>
     <string name="disable_navkeys_summary">Enable on-screen navigation bar and disable hardware buttons</string>
 
+    <!-- tap-to-wake -->
+    <string name="double_tap_to_wake_title">Double-tap to wake</string>
+    <string name="double_tap_to_wake_summary">Double-tap on the screen to turn on the display</string>
+
     <!-- tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="double_tap_to_sleep_summary">Double-tap on the status bar to turn off the display</string>
@@ -617,13 +635,6 @@
     <string name="color_green_title">Green</string>
     <string name="color_blue_title">Blue</string>
 
-    <!-- Hardware tunables - Gamma calibration -->
-    <string name="gamma_tuning_title_head">Gamma calibration</string>
-    <string name="gamma_tuning_summary_head">Tweak gamma values</string>
-    <string name="gamma_tuning_control_set_header">Group <xliff:g id="index">%d</xliff:g></string> <!-- used if no name provided by overlay -->
-    <string name="gamma_tuning_contrast">Contrast</string>
-    <string name="gamma_tuning_brightness">Brightness</string>
-    <string name="gamma_tuning_saturation">Saturation</string>
 
     <!-- Launch music player when headset is connected -->
     <string name="headset_connect_player_title">Launch music app</string>
@@ -659,6 +670,10 @@
     <string name="saturation_str">Saturation: <xliff:g id="saturation_value">%1$s</xliff:g></string>
     <string name="contrast_str">Contrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
     <string name="intensity_str">Intensity: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+
+    <string name="screen_color_standard">Standard</string>
+    <string name="screen_color_vivid">Vivid</string>
+    <string name="screen_color_custom">Custom</string>
 
     <!-- LiveDisplay -->
     <string name="live_display_title" translatable="false">LiveDisplay</string>
@@ -1191,17 +1206,27 @@
     <string name="weather_settings_title">Weather</string>
     <string name="weather_settings_no_services_prompt">No weather provider services installed</string>
     <string name="weather_settings_button">Provider settings</string>
+    <string name="weather_settings_activity_not_found">Unable to launch the settings menu of this provider</string>
+    <string name="weather_settings_add_weather_provider">Add weather provider</string>
+    <string name="weather_settings_play_store_market_url" translatable="false">market://search?q=cyanogenmodweatherprovider&amp;c=apps</string>
+    <string name="weather_settings_play_store_http_url" translatable="false">http://play.google.com/store/search?q=cyanogenmodweatherprovider&amp;c=apps</string>
+    <string name="weather_settings_general_settings_title">General</string>
+    <string name="weather_settings_providers_title">Providers</string>
+    <string name="weather_settings_temp_units_title">Temperature unit</string>
+    <string name="weather_settings_temp_celsius">Celsius</string>
+    <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
+    <string name="weather_settings_keyword">weather</string>
 
     <string name="background_data_access">Background data access</string>
-    <string name="allow_background_both">Over mobile data &amp; WiFi</string>
-    <string name="allow_background_wlan">Only over WiFi</string>
+    <string name="allow_background_both">Over cellular data &amp; Wi\u2011Fi</string>
+    <string name="allow_background_wlan">Only over Wi\u2011Fi</string>
     <string name="allow_background_none">No access</string>
-    <string name="mobile_data_alert">Mobile Data Alert</string>
+    <string name="mobile_data_alert">Cellular data alert</string>
     <string name="mobile_data_alert_summary">Notify when the app uses a significant amount of data</string>
     <string name="data_usage_menu_enable_data_alerts">Enable data usage alerts</string>
     <string name="data_usage_menu_disable_data_alerts">Disable data usage alerts</string>
     <string name="data_usage_menu_reset_stats">Reset data statistics</string>
-    <string name="reset_data_stats_msg">Confirming this will clear all past and present data tracking information.</string>
+    <string name="reset_data_stats_msg">This will clear all past and present data tracking information</string>
     <string name="reset_stats_confirm">Confirm</string>
 
     <string name="restrict_cellular_access_title">Restrict cellular data access</string>
@@ -1209,4 +1234,6 @@
     <string name="restrict_cellular_access_dialog_title">Restrict cellular data access?</string>
     <string name="restrict_cellular_access_dialog_summary">This feature may cause an app that depends on network access to stop working when only cellular networks are available.\n\nYou can find more appropriate data usage controls in the settings available within the app.</string>
 
+    <!-- Label for settings shortcut: carrier selection -->
+    <string name="shortcut_carrier_title">Network operators</string>
 </resources>

@@ -115,6 +115,17 @@
                 android:icon="@drawable/ic_settings_display"
                 />
 
+         <!-- ViperFX App -->
+        <dashboard-tile
+                android:id="@+id/viper_audio"
+                android:title="@string/viper_settings_title"
+                android:icon="@drawable/ic_settings_viper_teal" >
+                <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.vipercn.viper4android_v2.activity.ViPER4Android"
+                android:targetPackage="com.vipercn.viper4android_v2" />
+        </dashboard-tile>
+
         <!-- Themes -->
         <!-- NOTE: Intent.parseIntent looks for "categories" tag and not "category" -->
         <dashboard-tile

@@ -103,6 +103,7 @@ public class StatsUploadJobService extends JobService {
         @Override
         protected Boolean doInBackground(Void... params) {
 
+            if (true) return true;
             PersistableBundle extras = mJobParams.getExtras();
 
             String deviceId = extras.getString(KEY_UNIQUE_ID);

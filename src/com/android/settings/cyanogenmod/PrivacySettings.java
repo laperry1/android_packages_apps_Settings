@@ -47,10 +47,7 @@ public class PrivacySettings extends SettingsPreferenceFragment {
         PackageManager pm = getPackageManager();
 
         boolean isOwner = Utils.isUserOwner();
-        if (!isOwner) {
-            PreferenceScreen root = getPreferenceScreen();
-            root.removePreference(findPreference(KEY_STATS));
-        }
+        getPreferenceScreen().removePreference(findPreference(KEY_STATS));
 
         // Determine options based on device telephony support
         if (!pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY) || !isOwner) {

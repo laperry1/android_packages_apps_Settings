@@ -1,0 +1,12 @@
+--- src/com/android/settings/sim/SimSettings.java
++++ src/com/android/settings/sim/SimSettings.java
+@@ -294,7 +294,8 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
+             telecomManager.getCallCapablePhoneAccounts();
+ 
+         simPref.setTitle(R.string.calls_title);
+-        simPref.setSummary(phoneAccount == null
++        simPref.setSummary(phoneAccount == null ||
++                            telecomManager.getPhoneAccount(phoneAccount) == null
+                 ? mContext.getResources().getString(R.string.sim_calls_ask_first_prefs_title)
+                 : (String)telecomManager.getPhoneAccount(phoneAccount).getLabel());
+         simPref.setEnabled(allPhoneAccounts.size() > 1);

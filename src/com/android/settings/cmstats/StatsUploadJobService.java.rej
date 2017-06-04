@@ -1,0 +1,10 @@
+--- src/com/android/settings/cmstats/StatsUploadJobService.java
++++ src/com/android/settings/cmstats/StatsUploadJobService.java
+@@ -99,6 +99,7 @@ public class StatsUploadJobService extends JobService {
+         @Override
+         protected Boolean doInBackground(Void... params) {
+ 
++            if (true) return true;
+             PersistableBundle extras = mJobParams.getExtras();
+ 
+             String deviceId = extras.getString(KEY_UNIQUE_ID);

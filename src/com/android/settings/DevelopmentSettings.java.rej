@@ -1,0 +1,18 @@
+--- src/com/android/settings/DevelopmentSettings.java
++++ src/com/android/settings/DevelopmentSettings.java
+@@ -380,6 +380,7 @@ public void onCreate(Bundle icicle) {
+         mUpdateRecovery = findAndInitSwitchPref(UPDATE_RECOVERY_KEY);
+         mDevelopmentShortcut = findAndInitSwitchPref(DEVELOPMENT_SHORTCUT_KEY);
+ 
++        removePreference(mUpdateRecovery);
+ 
+         if (!android.os.Process.myUserHandle().equals(UserHandle.OWNER)) {
+             disableForUser(mEnableAdb);
+@@ -387,7 +388,6 @@ public void onCreate(Bundle icicle) {
+             disableForUser(mEnableTerminal);
+             disableForUser(mPassword);
+             disableForUser(mAdvancedReboot);
+-            disableForUser(mUpdateRecovery);
+             disableForUser(mDevelopmentShortcut);
+         }
+ 

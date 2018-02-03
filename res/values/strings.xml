@@ -97,6 +97,9 @@
     <!-- Phone Info screen. Ims Status - Unregistered.  Used for diagnostic info screens, precise translation isn't needed -->
     <string name="radio_info_ims_reg_status_not_registered">Not Registered</string>
 
+    <!--Double Tap to Sleep Lockscreen-->
+    <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
+
     <!-- Phone Info screen. Ims Feature Status label.  Used for diagnostic info screens, precise translation isn't needed -->
     <string name="radio_info_ims_feature_status_available">Available</string>
     <!-- Phone Info screen. Ims Feature status label.  Used for diagnostic info screens, precise translation isn't needed -->
